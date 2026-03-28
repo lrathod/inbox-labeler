@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+build/
+dist/
+
+# Gmail API Credentials (DO NOT PUSH)
+scripts/token.json
+scripts/credentials.json
+
+# Environment/Logs
+.env
+*.log
+labeler_log.txt
+
+# OS
+.DS_Store

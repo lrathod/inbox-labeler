@@ -1,0 +1,21 @@
+{
+  "defaultMode": "default",
+  "autoUpdate": true,
+  "saveCommandHistory": true,
+  "permissions": {
+    "allow": [
+      "Read(*)",
+      "Bash(python -m pytest)",
+      "Bash(python inbox-labeler/scripts/label_inbox.py --dry-run)"
+    ],
+    "ask": [
+      "Write(*)",
+      "Bash(python inbox-labeler/scripts/label_inbox.py)",
+      "Bash(pip install *)"
+    ],
+    "deny": [
+      "Bash(rm -rf *)",
+      "Read(**/.env)"
+    ]
+  }
+}
